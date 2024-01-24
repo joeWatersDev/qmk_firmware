@@ -58,12 +58,12 @@
       "KC_SLSH",
       "KC_SCLN",
       "KC_LGUI",
-      "TT(1)",
+      "TT(2)",
       "KC_LSFT",
       "KC_SPC",
       "KC_ENT",
       "KC_RALT",
-      "TT(2)",
+      "TT(1)",
       "KC_APP"
     ],
     [
@@ -178,12 +178,12 @@
       "KC_DOT",
       "KC_EQL",
       "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
       "TO(3)",
-      "KC_TRNS",
-      "KC_TRNS",
-      "KC_TRNS",
-      "KC_TRNS",
-      "KC_TRNS",
       "KC_TRNS"
     ],
     [
@@ -243,7 +243,7 @@
       "KC_SPC",
       "KC_TRNS",
       "KC_TRNS",
-      "TO(0)",
+      "KC_TRNS",
       "KC_TRNS"
     ]
   ],
