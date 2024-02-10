@@ -12,7 +12,8 @@
 #define TAPPING_TOGGLE 2
 #define SPLIT_USB_TIMEOUT 15000
 #define SPLIT_USB_TIMEOUT_POLL 10
-#define RGBLIGHT_DEFAULT_HUE 127
-#define RGBLIGHT_DEFAULT_SAT 124
-#define RGBLIGHT_DEFAULT_VAL 120
-#define RGBLIGHT_DEFAULT_ON false
+// #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_BAND_SAT
+#define RGB_MATRIX_DEFAULT_HUE 20 // Sets the default hue value, if none has been set
+#define RGB_MATRIX_DEFAULT_SAT 242 // Sets the default saturation value, if none has been set
+#define RGB_MATRIX_DEFAULT_SPD 127 // Sets the default animation speed, if none has been set
+#define RGB_MATRIX_DEFAULT_VAL 90
