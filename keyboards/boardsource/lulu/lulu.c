@@ -2,8 +2,17 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 #include "quantum.h"
 
+static fast_timer_t last_encoding_time = 0;
+static const fast_timer_t ENCODER_DEBOUNCE = 50;
+
 #ifdef ENCODER_ENABLE
 bool encoder_update_kb(uint8_t index, bool clockwise) {
+	if (TIMER_DIFF_FAST(timer_read_fast(), last_encoding_time) >= ENCODER_DEBOUNCE) {
+        last_encoding_time = timer_read_fast();
+    }
+    else {
+        return false;
+    }
     if (!encoder_update_user(index, clockwise)) { return false; }
     if (index == 0) {
         if (clockwise) {
